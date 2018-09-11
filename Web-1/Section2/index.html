@@ -5,35 +5,69 @@
 </head>
 
 <body>
-  <div id="output">Ternary Operatort</div>
+  <div id="output"></div>
 
     <script>
-    var output = document.getElementById('output');
-    var userNames = ["kevin", "james", "joe", "john"];
-
-    var userInput = prompt("What is your name?");
-
-    var answer = "";
-
-    var login = true;
-
-    if(userNames.indexOf(userInput) > -1){
-      output.innerHTML = "welcome it was true";
-      var age = prompt('What is your age?');
-      output.innerHTML += age > 18 ? "you are over 18" : "you are under 18";
-    } else{
-      output.innerHTML = "denied was not true";
-    }
+    // var output = document.getElementById('output');
+    // var userNames = ["kevin", "james", "joe", "john"];
+    //
+    // var userInput = prompt("What is your name?");
+    //
+    // var answer = "";
+    //
+    // var login = true;
+    //
+    // if(userNames.indexOf(userInput) > -1){
+    //   output.innerHTML = "welcome it was true";
+    //   var age = prompt('What is your age?');
+    //   output.innerHTML += age > 18 ? "you are over 18" : "you are under 18";
+    // } else{
+    //   output.innerHTML = "denied was not true";
+    // }
     // for(var x in userNames){
     //   var outputAnswer = (userInput == userNames[x]) ?  answer ="yes": answer = "no";
     // }
-
-
+    //
+    //
     // var login = false;
     // var outputHolder = "";
     // var userOkay = (login == true) ? outputHolder = "true":
     //   outputHolder ="false";
-      output.innerHTML += ". This is how you add things on the html page through javascript."
+    //   output.innerHTML += ". This is how you add things on the html page through javascript."
+
+    // var myTime = prompt("what hour is it?");
+    //
+    //         var output = document.getElementById("output");
+    //
+    //         if(myTime >= 8 && myTime < 12) {
+    //             output.innerHTML = "Wake up its morning";
+    //         } else if (myTime >= 12 && myTime < 13) {
+    //             output.innerHTML = "go to Lunch";
+    //         } else if (myTime >= 13 && myTime <= 16) {
+    //             output.innerHTML = "Go to work";
+    //         } else if (myTime >16 && myTime < 20) {
+    //             output.innerHTML = "Dinner Time";
+    //         } else if (myTime >= 22) {
+    //             output.innerHTML = "Time to go to sleep";
+    //         } else {
+    //            output.innerHTML = "You should be sleeping";
+    //         }
+
+
+    var choice = prompt("Please Enter Heads or Tails?");
+    var heads = Math.floor(Math.random()*10);
+    console.log(heads);
+    var tails = Math.floor(Math.random()*10);
+    console.log(tails);
+    var output = document.getElementById('output');
+
+    if(heads > tails){
+        output.innerHTML = "You entered "+ choice +", Head's Won";
+      }else if(tails > heads){
+        output.innerHTML = "You entered "+ choice +", Tails's Won";
+      }else{
+        output.innerHTML = "There was a tie!";
+      }
 
 
     </script>
