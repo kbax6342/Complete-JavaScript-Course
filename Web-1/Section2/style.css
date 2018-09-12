@@ -1,0 +1,11 @@
+.style{
+  background:blue;
+  border:solid black 2px;
+  text-align: center;
+  padding-top: 2em;
+  margin-top: 5em;
+  height: 3em;
+  width: 100%;
+  color: white;
+  font-size: 25px;
+}

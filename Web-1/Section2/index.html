@@ -2,10 +2,11 @@
 <html>
 <head>
     <title>Complete JavaScript Course 2</title>
+    <link rel="stylesheet" href="/Users/kevinbaxter/Desktop/Code-Black/Complete-JavaScript-Course/Web-1/Section2/style.css">
 </head>
 
 <body>
-  <div id="output"></div>
+  <div class="style" id="output"></div>
 
     <script>
     // var output = document.getElementById('output');
@@ -53,23 +54,40 @@
     //            output.innerHTML = "You should be sleeping";
     //         }
 
-
-    var choice = prompt("Please Enter Heads or Tails?");
-    var heads = Math.floor(Math.random()*10);
-    console.log(heads);
-    var tails = Math.floor(Math.random()*10);
-    console.log(tails);
+    //
+    // var choice = prompt("Please Enter Heads or Tails?");
+    // var heads = Math.floor(Math.random() * 2);
+    // console.log(heads);
+    // var tails = Math.floor(Math.random() * 2);
+    // console.log(tails);
+    // var output = document.getElementById('output');
+    //
+    // var result = choice == "heads" ? 1:0;
+    //
+    // if(heads ){
+    //     output.innerHTML = "You entered "+ choice +", Head's Won";
+    //   }else if(tails > heads){
+    //     output.innerHTML = "You entered "+ choice +", Tails's Won";
+    //   }else{
+    //     output.innerHTML = "There was a tie!";
+    //   }
     var output = document.getElementById('output');
+    var answer = prompt("Please ask a question?");
 
-    if(heads > tails){
-        output.innerHTML = "You entered "+ choice +", Head's Won";
-      }else if(tails > heads){
-        output.innerHTML = "You entered "+ choice +", Tails's Won";
-      }else{
-        output.innerHTML = "There was a tie!";
-      }
+    var randomNumber = Math.floor(Math.random() * 4);
 
-
+    switch (randomNumber) {
+      case 1:
+      output.innerHTML = "You will lose!";
+      break;
+      case 2:
+      output.innerHTML = "You will find love!";
+      break;
+      case 3:
+      output.innerHTML = "You will have Happily Ever After!";
+      break;
+      default: output.innerHTML = "Its broken!";
+    }
     </script>
 </body>
 
