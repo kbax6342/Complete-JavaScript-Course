@@ -6,7 +6,7 @@
 </head>
 
 <body>
-  <div class="style" id="output"></div>
+  <div  id="output"></div>
 
     <script>
     // var output = document.getElementById('output');
@@ -71,23 +71,58 @@
     //   }else{
     //     output.innerHTML = "There was a tie!";
     //   }
-    var output = document.getElementById('output');
-    var answer = prompt("Please ask a question?");
+    // var output = document.getElementById('output');
+    // var answer = prompt("Please ask a question?");
+    //
+    // var randomNumber = Math.floor(Math.random() * 4);
+    //
+    // switch (randomNumber) {
+    //   case 1:
+    //   output.innerHTML = "You will lose!";
+    //   break;
+    //   case 2:
+    //   output.innerHTML = "You will find love!";
+    //   break;
+    //   case 3:
+    //   output.innerHTML = "You will have Happily Ever After!";
+    //   break;
+    //   default: output.innerHTML = "Its broken!";
+    // }
+    // var player = prompt("Do you choose Rock, Paper or Scissors?");
+    // var ps = player.charAt(0).toUpperCase;
+    //
+    // var win = false;
+    // var computer = Math.random();
+    //  if (computer < 0.34){
+    //    computer = "Rock";
+    //  }else if(computer < 0.67){
+    //    computer = "Paper";
+    //  }else{
+    //    computer = "Scissors";
+    //  }
+    //  var cs = computer.charAt(0).toUpperCase();
+    //  var html = "";
+    //
+    //  if(cs == ps){
+    //    html += "its a Tie!";
+    //  }else{
+    //
+    //  }
+    //  output.innerHTML = "Plaver Vs. Computer <br>" + player  + "vs " + computer +" <br> Result: " + html;
 
-    var randomNumber = Math.floor(Math.random() * 4);
 
-    switch (randomNumber) {
-      case 1:
-      output.innerHTML = "You will lose!";
-      break;
-      case 2:
-      output.innerHTML = "You will find love!";
-      break;
-      case 3:
-      output.innerHTML = "You will have Happily Ever After!";
-      break;
-      default: output.innerHTML = "Its broken!";
-    }
+//Do While Loop
+var output = document.getElementById("output");
+
+var selection = prompt("How many times do you want to loop throught?");
+
+var x =0;
+do{
+  output.innerHTML += "value x = " + x + "<br>";
+  x++;
+}while(x < selection);
+
+output.innerHTML += "Final value of x=" + x + "<br>";
     </script>
 </body>
 
