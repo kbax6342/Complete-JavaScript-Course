@@ -112,17 +112,33 @@
 
 
 //Do While Loop
+// var output = document.getElementById("output");
+//
+// var selection = prompt("How many times do you want to loop throught?");
+//
+// var x = 0;
+// do{
+//   output.innerHTML += "value x = " + x + "<br>";
+//   x++;
+// }while(x < selection);
+//
+// output.innerHTML += "Final value of x=" + x + "<br>";
+
+//For loop
 var output = document.getElementById("output");
+var caloriesBananas = 89;
+var bananas = prompt("How many bananas do you want to eat?");
+var total = 0;
+var holder;
 
-var selection = prompt("How many times do you want to loop throught?");
+output.innerHTML += "hello";
 
-var x =0;
-do{
-  output.innerHTML += "value x = " + x + "<br>";
-  x++;
-}while(x < selection);
+for( var x = 1; x <= bananas; x++){
+ total += caloriesBananas;
+ output.innerHTML += "You at 1 banana another" + caloriesBananas + " calories your total is now " + total + "<br>";
+}
 
-output.innerHTML += "Final value of x=" + x + "<br>";
+output.innerHTML += "Your total calories count is " + total;
     </script>
 </body>
 
