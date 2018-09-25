@@ -9,3 +9,7 @@
   color: white;
   font-size: 25px;
 }
+
+td{
+  border: 1px solid black;
+}

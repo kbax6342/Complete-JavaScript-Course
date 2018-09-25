@@ -125,20 +125,72 @@
 // output.innerHTML += "Final value of x=" + x + "<br>";
 
 //For loop
+// var output = document.getElementById("output");
+// var caloriesBananas = 89;
+// var bananas = prompt("How many bananas do you want to eat?");
+// var total = 0;
+// var holder;
+//
+// output.innerHTML += "hello";
+//
+// for( var x = 1; x <= bananas; x++){
+//  total += caloriesBananas;
+//  output.innerHTML += "You at 1 banana another" + caloriesBananas + " calories your total is now " + total + "<br>";
+// }
+//
+// output.innerHTML += "Your total calories count is " + total;
+
 var output = document.getElementById("output");
-var caloriesBananas = 89;
-var bananas = prompt("How many bananas do you want to eat?");
-var total = 0;
-var holder;
 
-output.innerHTML += "hello";
+// var html = "<table>";
+//
+// for(var row = 0; row < 10; row++){
+//   // if( row === 5){
+//   //   break;
+//   // }
+//   if(row === 5){
+//     continue;
+//   }
+//   html += "<tr>";
+//   for(var col = 0; col < 5; col++){
+//     html += "<td> Cell = " + (col) + (row) + "</td>";
+//
+//   }
+//   html += "</tr>";
+// }
+// html += "</table>";
+//
+// output.innerHTML = html;
+// var total = 0;
+// var numberTotal = 0;
+//
+// for(var x =0; x <= 1000; x++){
+//   if(x % 5 == 0){
+//     output.innerHTML +=  x + "<br>";
+//      numberTotal += x;
+//
+//     total++;
+//
+//   }
+//
+// }
+// output.innerHTML += "This is the total number: " + numberTotal + "<br>"
+// output.innerHTML += "This is to the total number of times the  loop went through " + total;
 
-for( var x = 1; x <= bananas; x++){
- total += caloriesBananas;
- output.innerHTML += "You at 1 banana another" + caloriesBananas + " calories your total is now " + total + "<br>";
+var userNames = ["mike", "john", "larry"];
+for(var x = userNames.length - 1; x >= 0; x--){
+  output.innerHTML += userNames[x] + "<br>";
 }
 
-output.innerHTML += "Your total calories count is " + total;
+for(value of userNames){
+  output.innerHTML += value + "<br>";
+}
+// var x = 0;
+// while(userNames[x]){
+//   output.innerHTML += userNames[x] + "<br>";
+//   x++;
+// }
+
     </script>
 </body>
 
