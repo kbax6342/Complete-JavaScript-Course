@@ -5,9 +5,53 @@
     <link rel="stylesheet" href="/Users/kevinbaxter/Desktop/Code-Black/Complete-JavaScript-Course/Web-1/Section2/style.css">
 </head>
 
-<body>
-  <div  id="output"></div>
+<body >
+  <!-- <div  id="output"></div>
+  <input type="button" onClick="myFun()" value="Click Me"> -->
 
+
+  <!-- First: <input type="text" id="num1">
+  Second: <input type="text" id="num2">
+
+  <br> -->
+
+  <!-- <input type="button" onClick="addBy()" value="Add"> <input type="button" onClick="subtractBy()" value="Subtract"> <input type="button" onClick="multiplyBy()" value="Multiply"> <input type="button" onClick="divideBy()" value="Divide">
+  <br> -->
+  <!-- <input type="button" onClick="start()" value="Start Game" /> -->
+
+  <!-- <h2>Shopping List</h2>
+  <input type="text" id="item">
+  <br>
+  <input type="button" onClick="addItem()" value="Add Item">
+  <br>
+  <div id="output"></div> -->
+
+  <!-- <div id="wrapper">
+    Page 1
+  </div>
+  <form class="" action="index.html" method="post" name="myForm">
+    <input type="button" onclick="myFun(this)" name="" value="click 1">
+    <input type="button" onclick="myFun(this)" name="" value="click 2">
+    <input type="button" onclick="myFun(this)" name="" value="click 3">
+
+  </form> -->
+
+
+  <!-- <div id="wrapper">
+    Page 1
+
+  </div>
+  <img src="https://via.placeholder.com/350x150/222/fff?text=Image1" id="imgSwap" alt="" onmouseover="clmg(this)"
+  onmouseout="blmg(this)"> -->
+
+  <div id="wrapper">
+    Page 1
+  </div>
+<form class="" action="index.html" method="post">
+  First Name: <input type="text" id="e1" name="" value="Laurence"><br>
+  Last Name: <input type="text" id="e2" name="" value="Smith"> <br>
+  <input type="button"  onclick="sendInfo()" name="" value="Submit">
+</form>
     <script>
     // var output = document.getElementById('output');
     // var userNames = ["kevin", "james", "joe", "john"];
@@ -140,7 +184,7 @@
 //
 // output.innerHTML += "Your total calories count is " + total;
 
-var output = document.getElementById("output");
+// var output = document.getElementById("output");
 
 // var html = "<table>";
 //
@@ -177,21 +221,267 @@ var output = document.getElementById("output");
 // output.innerHTML += "This is the total number: " + numberTotal + "<br>"
 // output.innerHTML += "This is to the total number of times the  loop went through " + total;
 
-var userNames = ["mike", "john", "larry"];
-for(var x = userNames.length - 1; x >= 0; x--){
-  output.innerHTML += userNames[x] + "<br>";
-}
-
-for(value of userNames){
-  output.innerHTML += value + "<br>";
-}
+// var userNames = ["mike", "john", "larry"];
+// for(var x = userNames.length - 1; x >= 0; x--){
+//   output.innerHTML += userNames[x] + "<br>";
+// }
+//
+// for(value of userNames){
+//   output.innerHTML += value + "<br>";
+// }
 // var x = 0;
 // while(userNames[x]){
 //   output.innerHTML += userNames[x] + "<br>";
 //   x++;
+//
+
+//Different types of for loops.
+
+// var output = document.getElementById("output");
+//         var userNames = ["mike", "john", "larry"];
+//         for (var x = 0; x < userNames.length; x++) {
+//             output.innerHTML += userNames[x] + "<br>";
+//         }
+//         for (var x = userNames.length - 1; x >= 0; x--) {
+//             output.innerHTML += userNames[x] + "<br>";
+//         }
+//         output.innerHTML += "For in<br>";
+//         for (v of userNames) {
+//             output.innerHTML += v + "<br>";
+//         }
+//         var x = 0;
+//         while (userNames[x]) {
+//             output.innerHTML += userNames[x] + "<br>";
+//             x++;
+//         }
+
+//Loop through objects in the DOM
+    // for (var x in document ){
+    //   output.innerHTML += x + " = " + document[x] ;
+    // }
+
+//Shopping List
+// var limit = prompt("How many items do you want to add to the list?");
+// var addItem;
+//
+// var shoppingList = [];
+//
+//
+//
+// for(var x = 0; x < limit; x++){
+//   addItem = prompt("What do you want to add?");
+//   if(addItem.toLowerCase() === "no"){
+//     break;
+//   }
+//   shoppingList.push(addItem);
+// }
+//
+// for(var x of shoppingList){
+//   output.innerHTML += x + "<br>";
 // }
 
-    </script>
+
+// function myFun1(a,b,c){
+//   var response = a + b+ c;
+//   output.innerHTML = response;
+//
+// }
+// var adj = ["super","wonderful", "bad", "angry", "careful"];
+// var pick;
+//
+// function myFun(){
+//   var question = prompt("What is your name?");
+//   pick =   Math.floor(Math.random() * adj.length);
+//   output.innerHTML += question + " " +  adj[pick] + "<br>";
+// }
+
+// var output = document.getElementById('output');
+// var num1 = document.getElementById('num1');
+// var num2 = document.getElementById('num2');
+//
+// function addBy(){
+//   var a = Number(num1.value);
+//   var b = "+";
+//   var c = Number(num2.value);
+//   var d = a+c;
+//   outHTML(a,b,c,d);
+// }
+//
+// function subtractBy(){
+//   var a = Number(num1.value);
+//   var b = "-";
+//   var c = Number(num2.value);
+//   var d = a-c;
+//   outHTML(a,b,c,d);
+// }
+//
+// function multiplyBy(){
+//   var a = Number(num1.value);
+//   var b = "*";
+//   var c = Number(num2.value);
+//   var d = a*c;
+//   outHTML(a,b,c,d);
+// }
+//
+// function divideBy(){
+//   var a = Number(num1.value);
+//   var b = "/";
+//   var c = Number(num2.value);
+//   var d = a/c;
+//   outHTML(a,b,c,d);
+// }
+//
+//
+// function outHTML(a,b,c,d){
+//   output.innerHTML += a + " " + b + " " +  c + " = " + d + "<br>";
+//
+
+// var a = function(b){
+//   output.innerHTML = "Welcome to the show!" + b;
+// }
+// a("ello");
+//
+// //self invoking functin
+// var a = " World";
+//        var output = document.getElementById("output");
+//        (function () {
+//            var a = "Hello";
+//            output.innerHTML = a;
+//        })();
+//        output.innerHTML += a;
+
+//Shuffle Arrray function
+// var secretWord = ["JavaScript", "html", "css", "website", "a", 2, 4, 5, 6, 3, 4, 4, 5, 66565, 1231];
+  var output = document.getElementById("wrapper");
+//
+//         function start() {
+//             shuffleArray(secretWord);
+//             output.innerHTML += secretWord + "<br>";
+//         }
+//
+//         function shuffleArray(arr) {
+//             for (var x = arr.length - 1; x > 0; x--) {
+//                 var holder = Math.floor(Math.random() * (x + 1));
+//                 var temp = arr[x];
+//                 arr[x] = arr[holder];
+//                 arr[holder] = temp;
+//             }
+//             return arr;
+//         }
+
+
+//Get rid of duplicates in a Arrray
+// var myArray = ["hello", "world", 23423, "JavaScript", "hello", "world", 23423, 44334, 22, "JavaScript", ];
+//
+// var myArrayClean = removeDup(myArray);
+// output.innerHTML += myArray + "<br>" + myArrayClean;
+// function removeDup(arr){
+//  var cArray =[];
+//  var cObject = {};
+//    for(var x=0; x > arr.length; x++){
+//
+//      cObject[arr[x]] ="Whatever";
+//    }
+//
+//    return cArray;
+//  }
+
+
+//Shopping List
+
+
+// var shoppingList = [];
+// var number = 1;
+//
+// function addItem(){
+//
+//   var items = document.getElementById('item').value;
+//
+//   shoppingList.push(items);
+//   var lastItemAdded = shoppingList.length-1;
+//
+//
+//   output.innerHTML += number +". " + shoppingList[lastItemAdded] + "<br>";
+//   number++;
+//
+//
+// }
+//
+// function myFun(x) {
+// output.innerHTML = x.value;
+// x.value = "CLICKED";
+// }
+
+
+  // function myFun(){
+  //   output.innerHTML = "Welcome all loaded";
+  // }
+  //
+  //
+  // How Mouse events work.
+// window.onload =  function(){
+//   document.
+// }
+//
+//
+// var imgHolder = "https://via.placeholder.com/350x150/222/fff?text=Image1"
+//  function message(x){
+//   document.getElementById('wrapper').innerHTML = x;
+//  }
+//
+//
+//
+// function clmg(x){
+//   message(x.src);
+//   imgHolder = x.src;
+//   x.src="https://via.placeholder.com/350x150/ff0000/fff?text=Image2";
+// }
+//
+//
+// function blmg(x){
+//   x.src = imgHolder;
+// }
+//
+function sendInfo(){
+var firstName = event.target.parentElement.e1.value;
+var lastName = event.target.parentElement.e2.value;
+message(firstName,lastName);
+
+}
+
+function message(m,x){
+  document.getElementById("wrapper").innerHTML = m + " " + x;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </script>
+
+
+
+
+
+
 </body>
 
 </html>
